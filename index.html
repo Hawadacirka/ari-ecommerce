@@ -9,7 +9,7 @@
     <!-- ======CSS====== -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Ariella</title>
+    <title>Ariella Online Store</title>
 </head>
 <body>
     <!-- ======HEADER====== -->
@@ -22,14 +22,15 @@
     <div class="nav_menu" id="nav-menu">
         <ul class="nav_list">
             <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-            <li class="nav_item"><a href="#featured" class="nav_link">Featured</a></li>
             <li class="nav_item"><a href="#new" class="nav_link">New</a></li>
             <li class="nav_item"><a href="#subscribed" class="nav_link">Subscribed</a></li>
         </ul>
     </div>
 
-<div>
-    <i class='bx bxs-cart-alt nav_cart'></i>
+<!-- ======CART====== -->
+<div class="cart">
+    <i class='bx bxs-cart-alt'></i>
+    <div class="cartAmount">0</div>
     <i class='bx bx-menu nav_toggle' id="nav-toggle"></i>
 </div>
 
@@ -41,8 +42,8 @@
     <section class="home" id="home">
         <div class="home_container bd-grid" >
             <div class="home_data">
-                <h1 class="home_title">New <br> <span>ARRIVALS</span></h1>
-                <a href="#featured" class="button">GO SHOPPING</a>
+                <h1 class="home_title"><span>Pure Oils</span></h1>
+                <a href="#new" class="button">VIEW PRODUCTS</a>
             </div>
 
             <img src="img/drip.jpg" alt="drip" class="home_img">
@@ -54,50 +55,16 @@
             <div class="collection_box">
                 <img src="img/coconut.webp" alt="coconut" class="collection_img">
                 <div class="collection_data">
-                    <h2 class="collection_title"><span class="collection_subtitle">Oils<br>Products</span></h2>
-                    <a href="#" class="collection_view">View collection</a>
+                    <h2 class="collection_title"><span class="collection_subtitle">Coconut<br>Essential Oil<br><small>10 ml</small></span></h2>
                 </div>
             </div>
 
             <div class="collection_box">
                 <img src="img/clarysage.webp" alt="clary-sage" class="collection_img">
                 <div class="collection_data">
-                    <h2 class="collection_title"><span class="collection_subtitle">Oils<br>Products</span></h2>
-                    <a href="#" class="collection_view">View collection</a>
+                    <h2 class="collection_title"><span class="collection_subtitle">Clary Sage<br>Essential Oil<br><small>10 ml</small></span></h2>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--===== FEATURED PRODUCTS =====-->
-    <section class="featured section" id="featured">
-        <h2 class="section-title">FEATURED PRODUCTS</h2>
-        <a href="" class="section-all">View All</a>
-
-        <div class="featured_container bd-grid">
-            <div class="featured_product">
-                <div class="featured_box">
-                    <div class="featured_new">NEW</div>
-                    <img src="img/vanilla.webp" alt="" class="featured_img">
-                </div>
-
-                <div class="featured_data">
-                    <h3 class="featured name">Vanilla</h3>
-                    <span class="featured_preci">£29</span>
-                </div>
-            </div>
-
-            <div class="fatured_product">
-                <div class="featured_box">
-                    <div class="featured_new">NEW</div>
-                    <img src="img/eucalyptus.webp" alt="" class="featured_img">
-                </div>
-
-                <div class="featured_data">
-                    <h3 class="featured name">Eucalyptus</h3>
-                    <span class="featured_preci">£29</span>
-                </div>
-            </div>
-                </div>
         </div>
     </section>
     <!--===== OFFER =====-->
@@ -105,81 +72,369 @@
         <div class="offer_bg">
             <div class="offer_data">
                 <h2 class="offer_title">Special Offer</h2>
-                <p class="offer_description">Special offer discounts for women this week only</p>
+                <p class="offer_description">Special offer discounts this week!</p>
 
-                <a href="#" class="button">SHOP NOW</a>
+                <a href="./external.html" target="_blank" class="button">SHOP NOW</a>
             </div>
         </div>
     </section>
     <!--===== NEW ARRIVALS =====-->
     <section class="new section" id="new">
-        <h2 class="section-title">NEW ARRIVALS</h2>
-        <a href="" class="section-all">View All</a>
+        <h2 class="section-title">PRODUCTS</h2>
+        <href id="section-view" class="section-all">View All</a>
 
         <div class="new_container bd-grid">
+
             <div class="new_box">
+                <div class="product_box" data-name="p-1">
                 <img src="/img/coconut.webp" alt="coconut" class="new_img">
-
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
+                    <h3>coconut</h3>
+                <div class="price">£20.00</div>
+                    </div>
             </div>
-
-            <div class="new_box">
-                <img src="/img/guaiacwood.webp" alt="guaiacwood" class="new_img">
-
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
-            </div>
-
-            <div class="new_box">
-                <img src="/img/lavender.webp" alt="lavender" class="new_img">
-
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
-            </div>
-
-            <div class="new_box">
-                <img src="/img/lemongrass.webp" alt="lemongrass" class="new_img">
-
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
-            </div>
-
-            <div class="new_box">
-                <img src="/img/orange.webp" alt="orange" class="new_img">
-
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
-            </div>
-
-            <div class="new_box">
-                <img src="/img/rose.webp" alt="rose" class="new_img">
-    
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
-            </div>
-
-            <div class="new_box">
-                <img src="/img/sandalwood.webp" alt="sandalwood" class="new_img">
-        
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
-                </div>
-            </div>
-
-            <div class="new_box">
-                <img src="/img/tea tree.webp" alt="tea-tree" class="new_img">
             
-                <div class="new_link">
-                    <a href="#" class="button">VIEW BUTTON</a>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-2">
+                <img src="/img/guaiacwood.webp" alt="guaiacwood" class="new_img">
+                    <h3>Guaiacwood</h3>
+                <div class="price">£20.00</div>
                 </div>
             </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-3">
+                <img src="/img/lavender.webp" alt="lavender" class="new_img">
+                <h3>Lavender</h3>
+                <div class="price">£20.00</div>
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-4">
+                <img src="/img/lemongrass.webp" alt="lemongrass" class="new_img">
+                <h3>Lemongrass</h3>
+                <div class="price">£20.00</div>
+
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-5">
+                <img src="/img/orange.webp" alt="orange" class="new_img">
+                <h3>Orange</h3>
+                <div class="price">£20.00</div>
+
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-6">
+                <img src="/img/rose.webp" alt="rose" class="new_img">
+                <h3>Rose</h3>
+                <div class="price">£20.00</div>
+    
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-7">
+                <img src="/img/sandalwood.webp" alt="sandalwood" class="new_img">
+                <h3>Sandalwood</h3>
+                <div class="price">£20.00</div>
+        
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-8">
+                <img src="/img/tea tree.webp" alt="tea-tree" class="new_img">
+                <h3>Tea Tree</h3>
+                <div class="price">£20.00</div>
+            
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-9">
+                <img src="/img/vanilla.webp" alt="vanilla" class="new_img">
+                <h3>Vanilla</h3>
+                <div class="price">£20.00</div>
+            
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-10">
+                <img src="/img/eucalyptus.webp" alt="eucalyptus" class="new_img">
+                <h3>eucalyptus</h3>
+                <div class="price">£20.00</div>
+            
+                </div>
+            </div>
+
+            <div class="new_box">
+                <div class="product_box" data-name="p-11">
+                <img src="/img/neroli.webp" alt="neroli" class="new_img">
+                <h3>Earthy</h3>
+                <div class="price">£20.00</div>
+            
+                </div>
+            </div>
+
+            <div class="new_box" data-name="p-12">
+                <div class="product_box">
+                <img src="/img/bergamot.webp" alt="bergamot" class="new_img">
+                <h3>Bergamot</h3>
+                <div class="price">£20.00</div>
+            
+                </div>
+            </div>
+
+            <div class="products_preview">
+                <div class="preview" data-target="1">
+                    <i class='bx bx-x'></i>
+                    <img src="img/coconut.webp" alt="coconut">
+                    <h3>coconut</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="2">
+                    <i class='bx bx-x'></i>
+                    <img src="img/guaiacwood.webp" alt="guaiacwood">
+                    <h3>Guaiacwood</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="3">
+                    <i class='bx bx-x'></i>
+                    <img src="img/lavender.webp" alt="lavender">
+                    <h3>Lavender</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="4">
+                    <i class='bx bx-x'></i>
+                    <img src="img/lemongrass.webp" alt="lemongrass">
+                    <h3>Lemongrass</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="5">
+                    <i class='bx bx-x'></i>
+                    <img src="img/orange.webp" alt="orange">
+                    <h3>Orange</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="6">
+                    <i class='bx bx-x'></i>
+                    <img src="img/rose.webp" alt="rose">
+                    <h3>Rose</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="7">
+                    <i class='bx bx-x'></i>
+                    <img src="img/sandalwood.webp" alt="sandalwood">
+                    <h3>Sandalwood</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="8">
+                    <i class='bx bx-x'></i>
+                    <img src="img/tea tree.webp" alt="tea-tree">
+                    <h3>Tea Tree</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="9">
+                    <i class='bx bx-x'></i>
+                    <img src="img/vanilla.webp" alt="vanilla">
+                    <h3>Vanilla</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="10">
+                    <i class='bx bx-x'></i>
+                    <img src="img/eucalyptus.webp" alt="euc">
+                    <h3>Eucalyptus</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="11">
+                    <i class='bx bx-x'></i>
+                    <img src="img/neroli.webp" alt="neroli">
+                    <h3>Earthy</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+                <div class="preview" data-target="12">
+                    <i class='bx bx-x'></i>
+                    <img src="img/bergamot.webp" alt="bergamot">
+                    <h3>Bergamot</h3>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>(200)</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, odio qui. Qui, veritatis provident aut beatae eaque exercitationem accusamus? Quo reiciendis ipsa cum in provident earum voluptates, dolore quibusdam consequuntur.</p>
+                    <div class="price">£20.00</div>
+                    <div class="buttons">
+                        <a href="#" class="buy">Buy Now</a>
+                        <a href="#" class="cart">Add to Basket</a>
+                    </div>
+                </div>
+
+            </div>
+
+
 
         </div>
     </section>
@@ -188,7 +443,7 @@
         <div class="newsletter_container bd-grid">
             <div class="newsletter_subscribed">
               <h2 class="section-title">OUR NEWSLETTER</h2>
-                <p class="newsletter_description">Promotion new products and sales. Directly</p>
+                <p class="newsletter_description">Type your email address here because there is a chance you gets 90% dicount voucher!</p>
 
                 <form action="" class="newsletter_form">
                     <input type="text" class="newsletter_input" placeholder="Enter your email">
@@ -236,8 +491,8 @@
             <div class="footer_box">
                 <h3 class="footer_title">Ariella</h3>
                 <p class="footer_deal">Products store</p>
-                <a href="#"><img src="/img/appstore.png" alt="appstore" class="footer_store"></a>
-                <a href="#"><img src="/img/googleplay.png" alt="" class="footer_store"></a>
+                <a href="#"><img src="/img/1.png" alt="appstore" class="footer_store"></a>
+                <a href="#"><img src="/img/2.png" alt="" class="footer_store"></a>
             </div>
 
             <div class="footer_box">

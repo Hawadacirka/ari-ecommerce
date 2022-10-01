@@ -23,6 +23,23 @@ function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show')
 
+    
 }
+    navLink.forEach(n => n.addEventListener('click', linkAction))
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+
+    const actionButton = document.getElementById(".section-all");
+    const itemList = document.querySelector(".new_container");
+    
+    const toggleShowList = () => {
+      const isHidden = itemList.style.display === "none";
+      if (isHidden) {
+        // Display hidden element
+        itemList.style.display = "block";
+        actionButton.innerHTML = "Hide List";
+      } else {
+        // Hide element
+        itemList.style.display = "none";
+        actionButton.innerHTML = "Show List";
+      }
+    };
