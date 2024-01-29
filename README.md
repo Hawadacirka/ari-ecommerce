@@ -7,7 +7,7 @@ It was a project for my studies where I had to create a responsive design for an
 - CSS3
 - JavaScript
 ## Development
-It is shopping online about the essential Oils.
+It is an ecommerce wesbsite.
 ## Resources
 DEV
 Youtube
