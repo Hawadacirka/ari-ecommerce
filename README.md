@@ -1,8 +1,7 @@
 ### ARI ecommerce
 
 ## Process
-It was a project of my studies that my assignment was to create responive desgin ecommerce. 
-I found it interested because there needs backed developement for connnecting servers to get response on the website. I don't need it in my project.
+It was a project for my studies where I had to create a responsive design for an e-commerce website. I found it interesting because it involved backend development to connect servers and receive responses on the website.
 ## Built with
 - HTML5
 - CSS3
