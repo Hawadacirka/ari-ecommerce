@@ -1,7 +1,7 @@
 ### ARI ecommerce
 
 ## Process
-It was a project for developing myself. To create a responsive design for an e-commerce website.
+It was a project for developing. To create a responsive design for an e-commerce website.
 ## Built with
 - HTML5
 - CSS3
